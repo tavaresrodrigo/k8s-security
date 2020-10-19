@@ -10,6 +10,10 @@
 
 ## Cluster Hardening
 
+* Restrict access to Kubernetes API
+* Use Role Based Access Controls to minimize exposure
+* Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones
+* Update Kubernetes frequently
 
 ## Minimize Microservice Vulnerabilities
 
@@ -19,16 +23,10 @@
 * Appropriately use kernel hardening tools such as AppArmor, seccomp
 
 ## Restrict access to Kubernetes API.
+
 * Use Role Based Access Controls to minimize exposure.
 * Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones.
 * Update Kubernetes frequently.
-
-## System Hardening
-
-* Minimize host OS footprint (reduce attack surface).
-* Minimize IAM roles.
-* Minimize external access to the network.
-* Appropriately use kernel hardening tools such as AppArmor, seccomp.
 
 ## Minimize Microservice Vulnerabilities
 
