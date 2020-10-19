@@ -1,12 +1,11 @@
-# k8s-security
-
 ## Cluster Setup
 
-* Use CIS benchmark to review the security configuration of Kubernetes components (etcd, kubelet, kubedns, kubeapi).
-* Set up Ingress objects with security control.
-* Protect node metadata and endpoints.
-* Minimize use of, and access to, GUI elements.
-* Verify platform binaries before deploying.
+* Use Network security policies to restrict cluster level access
+* Use CIS benchmark to review the security configuration of Kubernetes components (etcd, kubelet, kubedns, kubeapi)
+* Properly set up Ingress objects with security control
+* Protect node metadata and endpoints
+* Minimize use of, and access to, GUI elements
+* Verify platform binaries before deploying
 
 ## Cluster Hardening
 
@@ -15,18 +14,12 @@
 * Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones
 * Update Kubernetes frequently
 
-## Minimize Microservice Vulnerabilities
+## System Hardening
 
 * Minimize host OS footprint (reduce attack surface)
 * Minimize IAM roles
 * Minimize external access to the network
 * Appropriately use kernel hardening tools such as AppArmor, seccomp
-
-## Restrict access to Kubernetes API.
-
-* Use Role Based Access Controls to minimize exposure.
-* Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones.
-* Update Kubernetes frequently.
 
 ## Minimize Microservice Vulnerabilities
 
